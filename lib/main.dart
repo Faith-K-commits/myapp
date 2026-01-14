@@ -17,11 +17,18 @@ class Home extends StatelessWidget {
       ),
       body: Center(
         // child: Image.asset('assets/smiley.png'),
-        child: ElevatedButton.icon(
-          onPressed: () {},
-          icon: Icon(Icons.mail),
-          label: Text("mail me"),
-          style: ElevatedButton.styleFrom(backgroundColor: Colors.amber),
+        // child: ElevatedButton.icon(
+        //   onPressed: () {},
+        //   icon: Icon(Icons.mail),
+        //   label: Text("mail me"),
+        //   style: ElevatedButton.styleFrom(backgroundColor: Colors.amber),
+        // ),
+        child: IconButton(
+          onPressed: () {
+            print("You clicked me!");
+          },
+          icon: Icon(Icons.alternate_email),
+          color: Colors.amber,
         ),
       ),
       floatingActionButton: FloatingActionButton(
