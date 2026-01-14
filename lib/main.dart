@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
-    home: Home(),
-  ));
+  runApp(MaterialApp(home: Home()));
 }
-
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -20,18 +17,18 @@ class Home extends StatelessWidget {
       ),
       body: Center(
         // child: Image.asset('assets/smiley.png'),
-        child: Icon(
-          Icons.airport_shuttle,
-          color: Colors.lightBlue,
-          size: 50.0,
+        child: ElevatedButton.icon(
+          onPressed: () {},
+          icon: Icon(Icons.mail),
+          label: Text("mail me"),
+          style: ElevatedButton.styleFrom(backgroundColor: Colors.amber),
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: Colors.red[600],
-        child: Text("click "),
+        child: Text("click"),
       ),
     );
   }
 }
-
