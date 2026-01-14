@@ -40,20 +40,41 @@ class Home extends StatelessWidget {
       //   child: Text("hello"),
       // ),
       // body: Padding(padding: EdgeInsets.all(90.0), child: Text('hello')),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.start,
+      // body: Row(
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   crossAxisAlignment: CrossAxisAlignment.start,
+      //   children: [
+      //     Text('hello world'),
+      //     TextButton(
+      //       onPressed: () {},
+      //       style: TextButton.styleFrom(backgroundColor: Colors.amber),
+      //       child: Text('click me'),
+      //     ),
+      //     Container(
+      //       color: Colors.cyan,
+      //       padding: EdgeInsets.all(40.0),
+      //       child: Text('inside container'),
+      //     ),
+      //   ],
+      // ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          Text('hello world'),
-          TextButton(
-            onPressed: () {},
-            style: TextButton.styleFrom(backgroundColor: Colors.amber),
-            child: Text('click me'),
+          Container(
+            padding: EdgeInsets.all(10.0),
+            color: Colors.cyan,
+            child: Text('one'),
           ),
           Container(
-            color: Colors.cyan,
-            padding: EdgeInsets.all(40.0),
-            child: Text('inside container'),
+            padding: EdgeInsets.all(20.0),
+            color: Colors.pinkAccent,
+            child: Text('two'),
+          ),
+          Container(
+            padding: EdgeInsets.all(30.0),
+            color: Colors.amber,
+            child: Text('three'),
           ),
         ],
       ),
